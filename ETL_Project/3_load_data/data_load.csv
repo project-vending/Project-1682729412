@@ -1,0 +1,9 @@
+
+import os
+
+# Define the path to the file
+file_path = os.path.join("ETL_Project", "3_load_data", "data_load.csv")
+
+# Create the empty file
+with open(file_path, "w") as f:
+    pass
