@@ -1,0 +1,14 @@
+
+import csv
+import os
+
+# Define the file path for the data_transform.csv file
+file_path = os.path.join("ETL_Project", "2_transform_data", "data_transform.csv")
+
+# Define the header row
+header_row = ["column1", "column2", "column3"]
+
+# Write the header row to the file
+with open(file_path, mode='w', newline='') as csvfile:
+   writer = csv.writer(csvfile, delimiter=',')
+   writer.writerow(header_row)
