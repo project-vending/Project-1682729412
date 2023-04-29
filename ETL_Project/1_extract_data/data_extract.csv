@@ -1,0 +1,11 @@
+
+import os
+import csv
+
+# Define the file path for the 'data_extract.csv' file
+file_path = os.path.join('ETL_Project', '1_extract_data', 'data_extract.csv')
+
+# Create a new CSV file, writing an empty row
+with open(file_path, 'w', newline='') as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow([])
